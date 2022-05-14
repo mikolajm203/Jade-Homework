@@ -1,3 +1,7 @@
 APDescription.txt
 Jade-Homework.iml
 MTPs-Main-Container.txt
+/.idea/*
+/.idea/**/*
+/.idea/.gitignore
+/out

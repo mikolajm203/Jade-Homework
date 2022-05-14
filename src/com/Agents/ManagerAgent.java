@@ -1,4 +1,4 @@
-package com;
+package com.Agents;
 
 import jade.core.Agent;
 
