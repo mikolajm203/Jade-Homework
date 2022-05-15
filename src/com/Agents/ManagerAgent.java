@@ -32,11 +32,11 @@ public class ManagerAgent extends Agent {
                 else{
                     System.out.printf("%s accepted the order\n",
                             myAgent.getAID().getName());
-                    ACLMessage response = new ACLMessage(ACLMessage.AGREE);
-                    response.setConversationId(msg.getConversationId());
-                    response.addReceiver(msg.getSender());
-                    response.setContent(String.valueOf(rand.nextInt(100)));
-                    myAgent.send(response);
+                    ACLMessage rresponse = new ACLMessage(ACLMessage.AGREE);
+                    rresponse.setConversationId(msg.getConversationId());
+                    rresponse.addReceiver(msg.getSender());
+                    rresponse.setContent(String.valueOf(rand.nextInt(100)));
+                    myAgent.send(rresponse);
                 }
             }
             else{

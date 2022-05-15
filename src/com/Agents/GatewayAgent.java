@@ -60,7 +60,7 @@ public class GatewayAgent extends Agent {
                         myAgent.send(query);
                         break;
                     case ACLMessage.AGREE:
-                        AID client = new AID(msg.getConversationId(), AID.ISLOCALNAME);
+                        AID client = new AID(msg.getConversationId(), AID.ISGUID);
                         ACLMessage response = new ACLMessage(ACLMessage.PROPOSE);
                         response.addReceiver(client);
                         response.setContent(msg.getContent());
